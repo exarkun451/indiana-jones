@@ -1,0 +1,55 @@
+h1 {
+	color:yellow;
+	font-family:bold;
+}
+
+h2 {
+	color:yellow;
+	font-family:bold;
+}
+
+h3 {
+	color:blue;
+}
+
+h3#question {
+	color:yellow;
+	font-family:Verdana;
+}
+
+body {
+	margin: 0;
+	background-color:black;
+	background-size: 1440px 900px;
+	background-repeat: no-repeat;
+	display: compact;
+	font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body#birthday_display {
+	margin: 0;
+	background-image: url('/images/grail_knight2.jpg');
+	background-size: 1440px 800px;
+}
+
+body#correct {
+	margin: 0;
+	background-image: url('/images/correct.png');
+	background-size: 1440px 600px;
+}
+
+body#wrong {
+	margin: 0;
+	background-image: url('/images/incorrect.jpg');
+	background-size: 1440px 800px;
+}
+
+body#game {
+	margin: 0;
+	background-image: url('/images/opening_screen.jpg');
+	background-size: 1440px 700px;
+	background-repeat: no-repeat;
+	display: compact;
+	font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-color:red;
+}

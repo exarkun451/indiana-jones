@@ -1,0 +1,25 @@
+<body id="game">
+<% #question 1 %>
+<% question_number = @index %>
+		<% question = (session[:questions])[question_number.to_i] %>
+			<h3 id="question"> <%= question[0]%> </h3>
+		<% element = (session[:answers])[question_number.to_i] %>
+			<% @answer1 = element[0]%>
+			<% @answer2 = element[1]%>
+			<% @answer3 = element[2]%>
+			<% @answer4 = element[3]%>
+	<form action="/correct" method="post">
+		<input type="submit" class="btn btn-primary" value='<%= "#{@answer1}" %>'/>
+	</form>
+	<form action="/wrong" method="post">
+		<input type="submit" class="btn btn-primary" value='<%= "#{@answer2}" %>'/>
+	</form>
+<div>
+	<form action="/wrong" method="post">
+		<input type="submit" class="btn btn-primary" value='<%= "#{@answer3}" %>'/>
+	</form>
+	<form action="/wrong" method="post">
+		<input type="submit" class="btn btn-primary" value='<%= "#{@answer4}" %>'/>
+	</form>
+</div>
+</body>
